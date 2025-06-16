@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "./Header.module.css";
 
 const Header = () => {
@@ -10,7 +8,12 @@ const Header = () => {
         <ul className={styles.list}>
           <li className={styles.list_item}>
             <a className={styles.link} href="#about">
-              About
+              About Me
+            </a>
+          </li>
+          <li className={styles.list_item}>
+            <a className={styles.link} href="#mystack">
+              My Stack
             </a>
           </li>
           <li className={styles.list_item}>

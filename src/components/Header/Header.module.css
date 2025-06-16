@@ -1,16 +1,19 @@
 .header {
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+  background-color: var(--main-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   width: 100%;
-  box-sizing: border-box;
-  position: sticky;
 }
 
 .logo {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .list {
@@ -32,7 +35,7 @@
 }
 
 .link:hover {
-  background-color: #f0f0f0;
+  background-color: var(--secondary-color);
 }
 
 .link.active {

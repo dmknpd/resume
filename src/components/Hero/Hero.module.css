@@ -1,19 +1,69 @@
-.header {
-  height: 100vh;
+.hero {
+  height: calc(100vh - 69px - 180px);
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   justify-content: center;
+  padding: 0 40px;
 }
 
 .title_container {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .name {
-  font-size: 8rem;
-  width: 70%;
+  font-size: 10rem;
+  width: 50%;
   overflow-wrap: break-word;
   white-space: normal;
-  line-height: 7.7rem;
+  line-height: 9.5rem;
+  font-weight: 800;
+  font-family: var(--big-font);
+}
+
+.title {
+  font-weight: 400;
+  font-size: 3rem;
+  font-family: var(--big-font);
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.name,
+.title {
+  opacity: 0;
+  animation-name: fadeInRight;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.title {
+  animation-delay: 1s;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
