@@ -1,0 +1,19 @@
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title_container {
+  text-align: left;
+}
+
+.name {
+  font-size: 8rem;
+  width: 70%;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 7.7rem;
+}
