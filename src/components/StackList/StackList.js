@@ -17,6 +17,9 @@ import php from "../../assets/img/php.svg";
 import laravel from "../../assets/img/laravel.svg";
 import rest_api from "../../assets/img/rest_api.svg";
 import websocket from "../../assets/img/websocket.svg";
+import sequelize from "../../assets/img/sequelize.svg";
+import mongoose from "../../assets/img/mongoose.svg";
+import jwt from "../../assets/img/jwt.svg";
 import mysql from "../../assets/img/mysql.svg";
 import postgresql from "../../assets/img/postgresql.svg";
 import mongodb from "../../assets/img/mongodb.svg";
@@ -45,26 +48,29 @@ const StackList = () => {
   const back = [
     { id: 11, title: "Node.js", icon: node_js },
     { id: 12, title: "Express.js", icon: express },
-    { id: 13, title: "PHP", icon: php },
-    { id: 14, title: "Laravel", icon: laravel },
-    { id: 15, title: "RESTful API", icon: rest_api },
-    { id: 16, title: "WebSocket", icon: websocket },
+    { id: 13, title: "Sequelize", icon: sequelize },
+    { id: 14, title: "Mongoose", icon: mongoose },
+    { id: 15, title: "PHP", icon: php },
+    { id: 16, title: "Laravel", icon: laravel },
+    { id: 17, title: "RESTful API", icon: rest_api },
+    { id: 18, title: "WebSocket", icon: websocket },
+    { id: 19, title: "JWT", icon: jwt },
   ];
 
   const db = [
-    { id: 17, title: "MySQL", icon: mysql },
-    { id: 18, title: "PostgreSQL", icon: postgresql },
-    { id: 19, title: "MongoDB", icon: mongodb },
+    { id: 20, title: "MySQL", icon: mysql },
+    { id: 21, title: "PostgreSQL", icon: postgresql },
+    { id: 22, title: "MongoDB", icon: mongodb },
   ];
 
   const tools = [
-    { id: 20, title: "Git", icon: git },
-    { id: 21, title: "npm", icon: npm },
-    { id: 22, title: "Postman", icon: postman },
-    { id: 23, title: "Docker", icon: docker },
-    { id: 24, title: "Webpack", icon: webpack },
-    { id: 25, title: "Gulp", icon: gulp },
-    { id: 26, title: "Figma", icon: figma },
+    { id: 23, title: "Git", icon: git },
+    { id: 24, title: "npm", icon: npm },
+    { id: 25, title: "Postman", icon: postman },
+    { id: 26, title: "Docker", icon: docker },
+    { id: 27, title: "Webpack", icon: webpack },
+    { id: 28, title: "Gulp", icon: gulp },
+    { id: 29, title: "Figma", icon: figma },
   ];
 
   return (

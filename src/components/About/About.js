@@ -7,15 +7,15 @@ const About = () => {
         <li className={styles.list_item}>
           <h4 className={styles.title}>Responsible</h4>
           <p className={styles.text}>
-            I consistently deliver high-quality work, meeting deadlines and
-            ensuring project reliability.
+            Consistently deliver high-quality work on time, ensuring reliability
+            and attention to detail.
           </p>
         </li>
         <li className={styles.list_item}>
           <h4 className={styles.title}>Curious</h4>
           <p className={styles.text}>
-            Driven by a passion for learning, I constantly explore new
-            technologies and approaches.
+            Eager to learn and explore new technologies, always seeking smarter
+            ways to solve problems.
           </p>
         </li>
         <li className={styles.list_item}>
