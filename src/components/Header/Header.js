@@ -17,8 +17,8 @@ const Header = () => {
             </a>
           </li>
           <li className={styles.list_item}>
-            <a className={styles.link} href="#portfolio">
-              Portfolio
+            <a className={styles.link} href="#projects">
+              Projects
             </a>
           </li>
           <li className={styles.list_item}>

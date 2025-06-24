@@ -21,7 +21,8 @@ const About = () => {
         <li className={styles.list_item}>
           <h4 className={styles.title}>Self-Motivated</h4>
           <p className={styles.text}>
-            Highly self-driven, I am committed to continuous improvement.
+            Highly self-driven, committed to continuous improvement, and always
+            seek opportunities to grow.
           </p>
         </li>
         <li className={styles.list_item}>

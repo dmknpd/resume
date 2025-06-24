@@ -1,0 +1,51 @@
+.project_item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: calc(var(--max-width) / 3);
+  transition: transform 0.5s ease;
+  will-change: transform;
+
+  cursor: pointer;
+}
+
+.project_item:hover {
+  transform: scale(1.02);
+}
+
+.project_content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.project_item:hover .title {
+  text-decoration: underline;
+}
+
+.img {
+  max-height: 235px;
+  height: auto;
+  max-height: 205px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.text {
+  font-size: 1.05rem;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  transition: color 0.5s ease;
+  will-change: color;
+}
+
+.project_item:hover .text {
+  color: var(--main-text-color);
+}
