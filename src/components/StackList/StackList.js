@@ -75,28 +75,28 @@ const StackList = () => {
 
   return (
     <>
-      <f3 className={styles.title}>Front-end</f3>
+      <h3 className={styles.title}>Front-end</h3>
       <div className={styles.stack_list}>
         {front.map((tech) => (
           <StackItem key={tech.id} title={tech.title} icon={tech.icon} />
         ))}
       </div>
 
-      <f3 className={styles.title}>Back-end</f3>
+      <h3 className={styles.title}>Back-end</h3>
       <div className={styles.stack_list}>
         {back.map((tech) => (
           <StackItem key={tech.id} title={tech.title} icon={tech.icon} />
         ))}
       </div>
 
-      <f3 className={styles.title}>Databases</f3>
+      <h3 className={styles.title}>Databases</h3>
       <div className={styles.stack_list}>
         {db.map((tech) => (
           <StackItem key={tech.id} title={tech.title} icon={tech.icon} />
         ))}
       </div>
 
-      <f3 className={styles.title}>Tools</f3>
+      <h3 className={styles.title}>Tools</h3>
       <div className={styles.stack_list}>
         {tools.map((tech) => (
           <StackItem key={tech.id} title={tech.title} icon={tech.icon} />

@@ -9,6 +9,13 @@ const Projects = () => {
     {
       id: 1,
       title: "Weather Updates API",
+      stack: [
+        "Express.js",
+        "PostgreSQL",
+        "Sequelize",
+        "nodemailer",
+        "node-cron",
+      ],
       description:
         "Service designed to provide users with regular weather updates via email. It allows users to subscribe to weather information for specific cities and receive updates at chosen frequencies.",
       icon: weather,
@@ -16,6 +23,14 @@ const Projects = () => {
     {
       id: 2,
       title: "QuoteChat",
+      stack: [
+        "Express.js",
+        "MongoDB",
+        "mongoose",
+        "React.js",
+        "Redux",
+        "socket.io",
+      ],
       description:
         "Dynamic chat service where users interact with a bot that automatically sends motivational quotes. It combines real-time messaging with an uplifting twist, offering an engaging experience that blends regular chat features with inspiring, automated content.",
       icon: chat,
@@ -28,7 +43,9 @@ const Projects = () => {
       <ul className={styles.list}>
         {projects.map((proj) => (
           <ProjectItem
+            key={proj.id}
             title={proj.title}
+            stack={proj.stack}
             description={proj.description}
             img={proj.icon}
           />

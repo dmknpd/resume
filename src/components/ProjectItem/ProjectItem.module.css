@@ -39,13 +39,24 @@
 }
 
 .text {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: var(--secondary-text-color);
   font-weight: 400;
-  transition: color 0.5s ease;
-  will-change: color;
+  line-height: 1.5;
+  transition: color 0.3s ease;
 }
 
 .project_item:hover .text {
   color: var(--main-text-color);
+}
+
+.stack {
+  font-weight: 500;
+  color: var(--main-text-color);
+  font-size: 1.05rem;
+  transition: font-size 0.2s ease;
+}
+
+span {
+  text-decoration: underline;
 }

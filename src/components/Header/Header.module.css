@@ -35,9 +35,6 @@
 }
 
 .link:hover {
-  background-color: var(--secondary-color);
-}
-
-.link.active {
-  border: 1px solid #000;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }

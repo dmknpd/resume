@@ -28,7 +28,7 @@ const About = () => {
         <li className={styles.list_item}>
           <h4 className={styles.title}>Communicative</h4>
           <p className={styles.text}>
-            Clear and effective communication skills, both verbal and written. 
+            Clear and effective communication skills, both verbal and written.
           </p>
         </li>
       </ul>
