@@ -41,7 +41,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Weather Updates API",
+      title: "Weather Updates",
       stack: [
         "Express.js",
         "PostgreSQL",
