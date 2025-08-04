@@ -2,15 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --main-font: "Roboto", sans-serif;
-  --big-font: "Roboto Condensed", sans-serif;
-  --max-width: 1440px;
+  --main-page-font: "Roboto", sans-serif;
+  --big-page-font: "Roboto Condensed", sans-serif;
+  --max-page-width: 1440px;
 
-  --main-text-color: #000;
-  --secondary-text-color: rgb(87, 87, 87);
+  --main-page-text-color: #000;
+  --secondary-page-text-color: rgb(87, 87, 87);
 
-  --main-color: #fff;
-  --secondary-color: #f0f0f0;
+  --main-page-color: #fff;
+  --secondary-page-color: #f0f0f0;
 }
 
 * {
@@ -20,12 +20,7 @@
 }
 
 body {
-  font-family: var(--main-font);
+  font-family: var(--main-page-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

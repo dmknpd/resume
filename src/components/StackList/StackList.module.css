@@ -10,3 +10,23 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+@media (max-width: 1152px) {
+  .stack_list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 675px) {
+  .stack_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 570px) {
+  .stack_list {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+}

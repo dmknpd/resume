@@ -5,14 +5,14 @@
 
 .title {
   font-size: 2.5rem;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .text {
   font-size: 1.5rem;
   font-weight: 400;
 
-  color: var(--secondary-text-color);
+  color: var(--secondary-page-text-color);
 }
 
 .list {
@@ -35,7 +35,7 @@
 
 .link {
   text-decoration: none;
-  color: var(--secondary-text-color);
+  color: var(--secondary-page-text-color);
   font-size: 1.2rem;
   transition: transform 0.3s ease;
   will-change: transform;
@@ -44,7 +44,7 @@
 
 .link:hover {
   text-decoration: underline;
-  color: var(--main-text-color);
+  color: var(--main-page-text-color);
   transform: scale(1.02);
 }
 
@@ -78,7 +78,7 @@
 }
 
 .submit {
-  background-color: var(--main-text-color);
+  background-color: var(--main-page-text-color);
   color: #ffffff;
   padding: 0.5rem 1.5rem;
   border-radius: 8px;
@@ -91,8 +91,20 @@
 }
 .submit:hover {
   transform: scale(1.05);
-  background-color: var(--secondary-text-color);
+  background-color: var(--secondary-page-text-color);
 }
 .submit:active {
   transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 570px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

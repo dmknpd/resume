@@ -5,9 +5,11 @@ import Stack from "../components/Stack/Stack";
 import Projects from "../components/Projects/Projects";
 import Contacts from "../components/Contacts/Contacts";
 
-const Main = () => {
+import styles from "./MainPage.module.css";
+
+const MainPage = () => {
   return (
-    <div id="about">
+    <div id="about" className={styles.App}>
       <Header />
       <Hero />
       <About />
@@ -18,4 +20,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainPage;

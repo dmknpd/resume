@@ -7,7 +7,7 @@
   padding: 20px 30px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: calc(var(--max-width) / 5);
+  max-width: calc(var(--max-page-width) / 5);
 }
 
 .content {
@@ -19,4 +19,10 @@
 .img {
   max-width: 50px;
   max-height: 50px;
+}
+
+@media (max-width: 570px) {
+  .stack_item {
+    min-width: 100%;
+  }
 }

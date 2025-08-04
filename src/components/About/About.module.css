@@ -23,7 +23,7 @@
 
 .text {
   font-size: 1.2rem;
-  color: var(--secondary-text-color);
+  color: var(--secondary-page-text-color);
   font-weight: 400;
 }
 
@@ -71,4 +71,10 @@
 
 .list_item:nth-child(4) {
   animation-delay: 1.2s;
+}
+
+@media (max-width: 1082px) {
+  .list {
+    flex-direction: column;
+  }
 }

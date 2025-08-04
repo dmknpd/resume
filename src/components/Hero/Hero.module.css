@@ -17,17 +17,17 @@
 .name {
   font-size: 10rem;
   width: 50%;
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
   white-space: normal;
   line-height: 9.5rem;
   font-weight: 800;
-  font-family: var(--big-font);
+  font-family: var(--big-page-font);
 }
 
 .title {
   font-weight: 400;
   font-size: 3rem;
-  font-family: var(--big-font);
+  font-family: var(--big-page-font);
 }
 
 @keyframes fadeInRight {
@@ -66,4 +66,24 @@
   animation-duration: 1.3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: calc(100vh - 69px);
+  }
+}
+
+@media (max-width: 675px) {
+  .name {
+    font-size: 8rem;
+    line-height: 8rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .name {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
 }

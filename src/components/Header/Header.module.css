@@ -1,9 +1,8 @@
 .header {
   position: sticky;
   top: 0;
-
   z-index: 1000;
-  background-color: var(--main-color);
+  background-color: var(--main-page-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +13,10 @@
 .logo {
   font-size: 24px;
   font-weight: 900;
+}
+
+.nav {
+  display: flex;
 }
 
 .list {
@@ -37,4 +40,67 @@
 .link:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.burger_line {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+@media (max-width: 767px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--main-page-color);
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    display: none;
+    border-bottom: 1px solid black;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .list {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .list_item {
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .link {
+    font-size: 18px;
+    width: 100%;
+    padding: 10px 0;
+    display: block;
+  }
 }
