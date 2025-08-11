@@ -60,3 +60,8 @@
 span {
   text-decoration: underline;
 }
+
+a {
+  text-decoration: none;
+  color: var(--main-page-text-color);
+}

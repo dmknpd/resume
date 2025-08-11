@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-import { BACKEND_HOST } from "../../config";
+import { BACKEND_HOST } from "../../config/config";
 
 import styles from "./Contacts.module.css";
 
