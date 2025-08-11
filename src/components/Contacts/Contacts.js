@@ -1,4 +1,7 @@
 import { useState } from "react";
+import axios from "axios";
+
+import { BACKEND_HOST } from "../../config";
 
 import styles from "./Contacts.module.css";
 
@@ -6,16 +9,38 @@ const Contacts = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
+  const [status, setStatus] = useState("");
+  const [error, setError] = useState("");
+  const [isSending, setIsSending] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("");
+    setError("");
+    setIsSending(true);
+
     const data = {
       name,
       email,
       text,
     };
 
-    console.log(data);
+    try {
+      const response = await axios.post(`${BACKEND_HOST}/api/mail/send`, data);
+
+      if (response.status === 200) {
+        setStatus(response.data.message);
+        resetForm();
+      } else {
+        setError(response.data.error);
+      }
+    } catch (error) {
+      setError("Server error");
+      console.error(error);
+    } finally {
+      setIsSending(false);
+    }
+
     resetForm();
   };
 
@@ -37,7 +62,12 @@ const Contacts = () => {
         <ul className={styles.list}>
           <li className={styles.item}>
             <h4 className={styles.text_title}>Telegram</h4>
-            <a href="https://t.me/dmk_npd" className={styles.link}>
+            <a
+              href="https://t.me/dmk_npd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
               t.me/dmk_npd
             </a>
           </li>
@@ -51,7 +81,12 @@ const Contacts = () => {
 
           <li className={styles.item}>
             <h4 className={styles.text_title}>GitHub</h4>
-            <a href="https://github.com/dmknpd" className={styles.link}>
+            <a
+              href="https://github.com/dmknpd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
               github.com/dmknpd
             </a>
           </li>
@@ -82,8 +117,10 @@ const Contacts = () => {
           onChange={(e) => setText(e.target.value)}
           required
         ></textarea>
+        {status && <p className={styles.message}>{status}</p>}
+        {error && <p className={styles.error}>{error}</p>}
         <button type="submit" className={styles.submit}>
-          Send
+          {isSending ? "Sending..." : "Send"}
         </button>
       </form>
     </div>

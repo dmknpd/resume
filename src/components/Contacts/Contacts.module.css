@@ -97,6 +97,20 @@
   transform: translateY(0);
 }
 
+.message {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  color: var(--main-page-text-color);
+}
+
+.error {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  color: rgb(184, 53, 53);
+}
+
 @media (max-width: 768px) {
   .form {
     width: 100%;
