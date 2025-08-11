@@ -91,7 +91,6 @@
 }
 .submit:hover {
   transform: scale(1.05);
-  background-color: var(--secondary-page-text-color);
 }
 .submit:active {
   transform: translateY(0);
