@@ -90,6 +90,18 @@ const Contacts = () => {
               github.com/dmknpd
             </a>
           </li>
+
+          <li className={styles.item}>
+            <h4 className={styles.text_title}>Resume</h4>
+            <a
+              href="https://drive.google.com/file/d/1DGEHWAgdwEvMVg3cj2uBiNO6M0OPuSyh/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              drive.google.com
+            </a>
+          </li>
         </ul>
       </div>
 
