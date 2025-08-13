@@ -86,4 +86,33 @@
     font-size: 7rem;
     line-height: 7rem;
   }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 485px) {
+  .name {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .name {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+
+@media (max-width: 355px) {
+  .name {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
 }
